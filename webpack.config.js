@@ -3,10 +3,10 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 
 module.exports = {
-    entry: "./entry.js",
+    entry: "./src/js/entry.js",
     output: {
         path: __dirname,
-        filename: "bundle.js"
+        filename: "./dist/js/bundle.js"
     },
     module: {
         loaders: [
@@ -27,14 +27,14 @@ module.exports = {
                 test: /\.css$/,
                 loader: 'string-replace-loader',
                 query: {
-                    search: 'caption',
-                    replace: 'ciasteczko',
+                    search: 'green',
+                    replace: 'blue',
                     flags: ''
                 }
             }
         ]
     },
     plugins: [
-        new ExtractTextPlugin("styles.css")
+        new ExtractTextPlugin("./dist/css/styles.css")
     ]
 };
