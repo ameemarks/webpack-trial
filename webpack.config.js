@@ -27,7 +27,15 @@ module.exports = {
                     // , {
                     //     loader: 'postcss-loader'}
                 ]
-            }) }
+            }) },
+            {
+                test: /style-ipla\.css$/,
+                loader: 'string-replace-loader',
+                query: {
+                    search: '../fonts/',
+                    replace: './fonts'
+                }
+            }
         ]
       /*  rules: [
             {
