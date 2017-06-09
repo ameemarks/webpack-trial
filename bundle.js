@@ -83,14 +83,14 @@ module.exports = "It works from content.js.";
 /* 2 */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: ModuleBuildError: Module build failed: TypeError: loaderUtils.getOptions is not a function\n    at Object.module.exports (/home/anna/projects/webpack-css/node_modules/string-replace-loader/index.js:24:29)\n    at runLoaders (/home/anna/projects/webpack-css/node_modules/webpack/lib/NormalModule.js:192:19)\n    at /home/anna/projects/webpack-css/node_modules/loader-runner/lib/LoaderRunner.js:364:11\n    at /home/anna/projects/webpack-css/node_modules/loader-runner/lib/LoaderRunner.js:230:18\n    at runSyncOrAsync (/home/anna/projects/webpack-css/node_modules/loader-runner/lib/LoaderRunner.js:143:3)\n    at iterateNormalLoaders (/home/anna/projects/webpack-css/node_modules/loader-runner/lib/LoaderRunner.js:229:2)\n    at /home/anna/projects/webpack-css/node_modules/loader-runner/lib/LoaderRunner.js:202:4\n    at /home/anna/projects/webpack-css/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:62:14\n    at _combinedTickCallback (internal/process/next_tick.js:73:7)\n    at process._tickCallback (internal/process/next_tick.js:104:9)");
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(1);
 __webpack_require__(2);
+__webpack_require__(1);
 document.write(__webpack_require__(0));
 
 /***/ })
