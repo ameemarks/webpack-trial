@@ -29,7 +29,7 @@ module.exports = {
                 query: {
                     search: 'green',
                     replace: 'blue',
-                    flags: ''
+                    flags: 'g'
                 }
             }
         ]
